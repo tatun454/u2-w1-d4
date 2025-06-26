@@ -1,0 +1,122 @@
+body {
+  background-color: grey;
+  width: 100%;
+}
+
+.board1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15em;
+}
+.board2 {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+}
+.post-it1 {
+  margin-left: 5em;
+  background-color: #e7e7b1;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(-5deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.4s;
+}
+.post-it2 {
+  margin-left: 2em;
+  background-color: #b6d9b7;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(5deg);
+}
+.post-it3 {
+  margin-left: 2em;
+  background-color: #9a9bae;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(-5deg);
+}
+.post-it4 {
+  margin-left: 2em;
+  margin-right: 5em;
+  background-color: #bee3bf;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(5deg);
+}
+.post-it5 {
+  margin-left: 5em;
+  background-color: #e7e7b1;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(5deg);
+}
+.post-it6 {
+  margin-left: 2em;
+  background-color: #bab8db;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(-5deg);
+}
+.post-it7 {
+  margin-left: 2em;
+  background-color: #f1f2bd;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(5deg);
+}
+.post-it8 {
+  margin-left: 2em;
+  margin-right: 5em;
+  background-color: #cafacc;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 0 0 10px black;
+  transform: rotate(-5deg);
+}
+
+h2 {
+  padding-top: 2em;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+p {
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+.post-it1:hover,
+.post-it2:hover,
+.post-it3:hover,
+.post-it4:hover,
+.post-it5:hover,
+.post-it6:hover,
+.post-it7:hover,
+.post-it8:hover {
+  transform: scale(3) rotate(0deg);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), inset 0 0 10px black;
+  z-index: 2;
+}
+
+.post-it1,
+.post-it2,
+.post-it3,
+.post-it4,
+.post-it5,
+.post-it6,
+.post-it7,
+.post-it8 {
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.4s;
+}
